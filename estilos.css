@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'open sans';
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: rgb(247, 211, 10);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+} 
+/* Header */
+
+header{
+    width: 100%;
+    height: 600px;
+    background:linear-gradient(to right, hsla(48, 86%, 57%, 0.603), hsla(0, 68%, 45%, 0.61)), url(../imagenes/Portada.jpg);
+background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(48, 86%, 57%, 0.603), hsla(0, 68%, 45%, 0.61)), url(../imagenes/Portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav> a{
+    color: honeydew;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+nav> a:hover{
+    text-decoration: underline;
+}
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size: 50px;
+    color: honeydew;
+}
+.textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: honeydew;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* About us */
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen-abaut-us{
+     width: 48%;
+}
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+.contenido-textos h3 sap{
+    background: red;
+    color: seashell;    
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+}
+.contenido-textos p {
+    padding: 0px 0px 300px 15px;
+    font-weight: 300;
+    text-align: justify;
+
+}
+/* Galeria */
+.Menu {
+    background: rgb(243, 82, 82);
+}
+.galeria-Menu{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-menu{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0,.5);
+}
+.imagen-menu > imagenes{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273, 91%, 27%, 0.7);
+    transition: transform .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover-galeria imagenes{
+    width: 50px;
+}
+.imagen-menu:hover .hover-galeria{
+    transform: scale(1);
+}
+/*footer*/
+footer{
+    background: #fa3e3e;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-footer{
+     display: flex;
+     width: 90%;
+     justify-content: space-evenly;
+     margin: auto;
+     padding-bottom: 50px;
+     border-bottom: 1px solid #F0CB35;
+}
+.content-foo {
+    text-align: center;
+}
+.content-foo h4{
+    color: #ffd83a;
+    border-bottom: 3px solid #F0CB35;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.content-foo p{
+    color: #ffffff;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: black;
+}
+@media screem and (max-width:900px){
+    header{
+        background-position: center;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
